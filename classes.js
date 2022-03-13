@@ -13,7 +13,7 @@ class Platform {
 }
 
 class Ball {
-
+	speed = 10;
 	constructor (x, y , r) {
 		this.x = x;
 		this.y = y;
@@ -49,7 +49,7 @@ class CurrTraject {
 class ReferenceWindow {
 	constructor (show) {
 		this.show = show;
-		this.width = canvas.width/100*50; // 50% 
+		this.width = canvas.width/100*40; // 40% 
 		this.height = canvas.height/100*40;
 		this.text = ["A, D - Platform control","W - Increase ball speed","Space/ Mouse click - Start game"];
 	}
