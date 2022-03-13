@@ -24,6 +24,10 @@ document.addEventListener("click", function (e) {
 		gameStart();
 	}
 });
+window.addEventListener("resize", function () {
+	canvas.width = document.documentElement.clientWidth;
+	canvas.height = document.documentElement.clientHeight; 
+});
 
 
 function draw () {
